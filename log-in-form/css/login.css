@@ -38,6 +38,9 @@ div{
   text-align: center;
   border-radius: 0px 15px 0px 10px;
 }
+.form-module .toggle:hover{
+    background: #0684d3;
+}
 .form-module .toggle .tooltip {
   position: absolute;
   top: 5px;
