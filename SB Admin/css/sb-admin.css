@@ -256,3 +256,31 @@ ul.alert-dropdown {
   height: 2px;
   margin: 15px 0px 15px 0px;
 }
+.form-control{
+  height: 40px;
+}
+#tbbutton{
+  background-color: #969EA6;
+  float: center;
+  width: 100%;
+}
+#tbbutton:hover{
+  background-color: #899199;
+}
+.label-success{
+  font-size: 15px;
+  float: center;
+}
+.label-danger{
+  font-size: 15px;
+  float: center;
+}.label-warning{
+  font-size: 15px;
+  float: center;
+}
+#submit{
+  background-color: #45bc67;
+}
+#submit:hover{
+  background-color: #56C176;
+}

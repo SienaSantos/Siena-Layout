@@ -193,7 +193,6 @@
                     </li>
                     <li>
                         <a href="user-dashboard.html"><i class="fa fa-fw fa-file"></i> User Dashboard</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -207,77 +206,89 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Submit Ticket
+                            My Support Tickets
                             <!-- <small>Subheading</small> -->
                         </h1>
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="subject">Subject</label>
-                              <div class="col-sm-10">
-                                <input type="subject" class="form-control" id="subject" placeholder="Subject">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="dept">Choose Department</label>
-                              <div class="col-sm-10">
-                                <select class="form-control">
-                                    <option>Support</option>
-                                    <option>Production</option>
-                                    <option>Research and Development</option>
-                                    <option>PurchasingPurchasing</option>
-                                    <option>MarketingMarketing</option>
-                                    <option>Human Resource Management</option>
-                                    <option>IT</option>
-                                    <option>Accounting and Finance.</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="related">Related Service</label>
-                              <div class="col-sm-10">
-                                <select class="form-control">
-                                    <option>E-Commerce Hosting -thegentlemanproject.com</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
 
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="priority">Priority</label>
-                              <div class="col-sm-10">
-                                <select class="form-control">
-                                    <option>Low</option>
-                                    <option>Medium</option>
-                                    <option>High</option>
-                                    <option>Urgent</option>
-                                </select>
-
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="message">Message</label>
-                              <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="attachment">Attachments</label>
-                              <div class="col-sm-10">
-                                <input type="file" style="margin-top:5px;">
-                              </div>
+                          <form class="form-horizontal" role="form">
+                            <div class="form-group col-sm-12">
+                              <label class="control-label col-sm-5 col-sm-offset-1 " for="sender">4 Records Found, Page 1 of 1</label>
+                                <div class="col-sm-2">
+                                  <button type="cancel" class="btn" id="submit">Submit Ticket</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <input type="email" class ="form-control" id="from" placeholder="Search" >
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="submit" class = "btn" >Search</button>
+                                </div>
                             </div>
 
-                            <div class="form-group">
-                              <div class="col-sm-offset-5 col-sm-10 btns">
-                                  <button type="submit" class = "btn" >Submit</button>
-                                  <button type="cancel" class="btn" style="background-color: #969EA6;">Cancel</button>
-                                  <a href="tickets-message.html">Tickets</a>
-                              </div>
-                            </div>
                           </form>
+                          <table class="table table-bordered table-hover col-sm-12">
+                            <thead style="background-color: #76b4db ; color : #444">
+                              <tr>
+                                <th>Date</th>
+                                <th>Department</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Last Updated</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>25/11/2015 07:39</td>
+                                <td>Support</td>
+                                <td>Coming Soon</td>
+                                <td><span class="label label-success">Answered</span></td>
+                                <td>11/26/2015 6:39 pm</td>
+                                <td><button type="button" class="btn" id ="tbbutton">View Ticket</button></td>
+                              </tr>
+                              <tr>
+                                <td>25/11/2015 07:39</td>
+                                <td>Support</td>
+                                <td>Coming Soon</td>
+                                <td><span class="label label-danger">Closed</span></td>
+                                <td>11/26/2015 6:39 pm</td>
+                                <td><button type="button" class="btn" id ="tbbutton">View Ticket</button></td>
+                              </tr>
+                              <tr>
+                                <td>25/11/2015 07:39</td>
+                                <td>Support</td>
+                                <td>Coming Soon</td>
+                                <td><span class="label label-danger">Closed</span></td>
+                                <td>11/26/2015 6:39 pm</td>
+                                <td><button type="button " class="btn" id ="tbbutton">View Ticket</button></td>
+                              </tr>
+                              <tr>
+                                <td>25/11/2015 07:39</td>
+                                <td>Support</td>
+                                <td>Coming Soon</td>
+                                <td><span class="label label-warning">Seen</span></td>
+                                <td>11/26/2015 6:39 pm</td>
+                                <td><button type="button" class="btn" id ="tbbutton">View Ticket</button></td>
+                              </tr>
+                              <tr>
+                                <td>25/11/2015 07:39</td>
+                                <td>Support</td>
+                                <td>Coming Soon</td>
+                                <td><span class="label label-success">Answered</span></td>
+                                <td>11/26/2015 6:39 pm</td>
+                                <td><button type="button" class="btn" id ="tbbutton">View Ticket</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="page">
+                            <ul class="pagination">
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                            </ul>
+                          </div>
+
                     </div>
                 </div>
                 <!-- /.row -->
