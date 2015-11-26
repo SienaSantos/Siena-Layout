@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>IA Innovations</title>
+    <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -204,51 +204,18 @@
                             Submit Ticket
                             <!-- <small>Subheading</small> -->
                         </h1>
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="subject">Subject</label>
-                              <div class="col-sm-10">
-                                <input type="subject" class="form-control" id="subject" placeholder="Subject">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="dept">Choose Department</label>
-                              <div class="col-sm-10">
-                                <select class="form-control">
-                                    <option>Support</option>
-                                    <option>Production</option>
-                                    <option>Research and Development</option>
-                                    <option>PurchasingPurchasing</option>
-                                    <option>MarketingMarketing</option>
-                                    <option>Human Resource Management</option>
-                                    <option>IT</option>
-                                    <option>Accounting and Finance.</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="related">Related Service</label>
-                              <div class="col-sm-10">
-                                <select class="form-control">
-                                    <option>E-Commerce Hosting -thegentlemanproject.com</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
 
+                          <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="sender">From</label>
+                              <div class="col-sm-10">
+                                <input type="email" class ="form-control" id="from" placeholder="From" >
                               </div>
                             </div>
                             <div class="form-group">
-                              <label class="control-label col-sm-2" for="priority">Priority</label>
+                              <label class="control-label col-sm-2" for="receiver">To</label>
                               <div class="col-sm-10">
-                                <select class="form-control">
-                                    <option>Low</option>
-                                    <option>Medium</option>
-                                    <option>High</option>
-                                    <option>Urgent</option>
-                                </select>
-
+                                <input type="email" class ="form-control" id="to" placeholder="To" >
                               </div>
                             </div>
                             <div class="form-group">
@@ -257,8 +224,17 @@
                                 <textarea class="form-control" rows="3" placeholder="Message"></textarea>
                               </div>
                             </div>
+                            <div class="divider">
+
+                            </div>
                             <div class="form-group">
-                              <label class="control-label col-sm-2" for="attachment">Attachments</label>
+                              <i class="fa fa-user col-sm-1 col-sm-offset-1 this-icon"></i>
+                              <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" placeholder="Your comment..."></textarea>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="dept">Attachments</label>
                               <div class="col-sm-10">
                                 <input type="file" style="margin-top:5px;">
                               </div>
@@ -266,11 +242,12 @@
 
                             <div class="form-group">
                               <div class="col-sm-offset-5 col-sm-10 btns">
-                                  <button type="submit" class = "btn" >Submit</button>
-                                  <button type="cancel" class="btn" style="background-color: #969EA6;">Cancel</button>
-                                  <a href="tickets-message.html">Tickets</a>
+                                  <button type="cancel" class="btn" style="background-color: #969EA6;">Back</button>
+                                  <button type="submit" class = "btn" >Reply</button>
+                                  <button type="cancel" class="btn" style="background-color: #D60A00;">Close Ticket</button>
                               </div>
                             </div>
+                          </form>
                           </form>
                     </div>
                 </div>

@@ -246,3 +246,13 @@ ul.alert-dropdown {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
   background-color: #dbdbdd;
 }
+.this-icon{
+  font-size: 30px !important;
+  padding: 5px 0px 0px 70px;
+  color : #D5D7D8;
+}
+.divider{
+  background-color: #EDEFF0;
+  height: 2px;
+  margin: 15px 0px 15px 0px;
+}
