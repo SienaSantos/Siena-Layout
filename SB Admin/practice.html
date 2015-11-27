@@ -15,10 +15,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
     <link href="css/sb-admin.css" rel="stylesheet">
-
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,6 +49,7 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
+                <li> <a id="log">Log In</i> <b class="caret"></b></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
                     <ul class="dropdown-menu message-dropdown">
@@ -153,6 +158,32 @@
                     <li>
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
+                    <li  class="active">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-envelope"></i> Tickets <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                              <script type="text/javascript">
+                                $('a').click(function(event){
+                                  event.preventDefault();
+
+                                })
+                              </script>
+                                <a class ="ticketSection" href="unassigned.html">Unassigned</a>
+                            </li>
+                            <li>
+                                <a class ="ticketSection"  href="#">Unreplied</a>
+                            </li>
+                            <li>
+                                <a class ="ticketSection"  href="#">Replied</a>
+                            </li>
+                            <li>
+                                <a class ="ticketSection"  href="#">Closed</a>
+                            </li>
+                            <li>
+                                <a  class ="ticketSection" href="#">Transfer Out</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
                     </li>
@@ -169,7 +200,7 @@
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="#">Dropdown Item</a>
@@ -188,90 +219,63 @@
                     <li>
                         <a href="ticket-form.html"><i class="fa fa-fw fa-file"></i> Ticket Form</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="tickets-message.html"><i class="fa fa-fw fa-file"></i> Message</a>
                     </li>
                     <li>
-                        <a href="user-dashboard.html"><i class="fa fa-fw fa-file"></i> User Dashboard</a>
+                        <a href="user-dashboard.html" target="frame"><i class="fa fa-fw fa-file"></i> User Dashboard</a>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
 
         <div id="page-wrapper">
-
-            <div class="container-fluid">
-
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Submit Ticket
-                            <!-- <small>Subheading</small> -->
-                        </h1>
-
-                          <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="sender">From</label>
-                              <div class="col-sm-10">
-                                <input type="email" class ="form-control" id="from" placeholder="From" >
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="receiver">To</label>
-                              <div class="col-sm-10">
-                                <input type="email" class ="form-control" id="to" placeholder="To" >
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="message">Message</label>
-                              <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                              </div>
-                            </div>
-                            <div class="divider">
-
-                            </div>
-                            <div class="form-group">
-                              <i class="fa fa-user col-sm-1 col-sm-offset-1 this-icon"></i>
-                              <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" placeholder="Your comment..."></textarea>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-sm-2" for="dept">Attachments</label>
-                              <div class="col-sm-10">
-                                <input type="file" style="margin-top:5px;">
-                              </div>
-                            </div>
-
-                            <div class="form-group">
-                              <div class="col-sm-offset-5 col-sm-10 btns">
-                                  <button type="cancel" class="btn" style="background-color: #969EA6;">Back</button>
-                                  <button type="submit" class = "btn" >Reply</button>
-                                  <button type="cancel" class="btn" style="background-color: #D60A00;">Close Ticket</button>
-                              </div>
-                            </div>
-                          </form>
-                          
-                    </div>
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /.container-fluid -->
+            <!-- <iframe src="content.html" width="100%" frameborder='0' scrolling='no' id='frame_id' style='overflow:hidden;'></iframe>         <! /.container-fluid -->
+            <iframe name="frame" id="idIframe" src="content.html"></iframe>
 
         </div>
         <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->
+    <div id="login">
+      <div class="module form-module">
+        <div class="toggle pencil"><i class="fa fa-times fa-pencil"></i>
+          <div class="tooltip">Click Me</div>
+        </div>
+        <!-- <div class="toggle close"><i class="fa fa-times fa-times"></i>
+          <div class="tooltip">Close</div>
+        </div> -->
+
+        <div class="form">
+          <h2>Login to your account</h2>
+          <form>
+            <input type="text" placeholder="Username"/>
+            <input type="password" placeholder="Password"/>
+            <button>Login</button>
+          </form>
+        </div>
+        <div class="form">
+          <h2>Create an account</h2>
+          <form>
+            <input type="text" placeholder="Username"/>
+            <input type="password" placeholder="Password"/>
+            <input type="email" placeholder="Email Address"/>
+            <input type="tel" placeholder="Phone Number"/>
+            <button>Register</button>
+          </form>
+        </div>
+        <div class="cta"><a href="#">Forgot your password?</a></div>
+      </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/login.js"></script>
 
 </body>
 

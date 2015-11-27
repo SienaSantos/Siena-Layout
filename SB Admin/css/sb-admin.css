@@ -250,6 +250,7 @@ ul.alert-dropdown {
   font-size: 30px !important;
   padding: 5px 0px 0px 70px;
   color : #D5D7D8;
+
 }
 .divider{
   background-color: #EDEFF0;
@@ -267,14 +268,14 @@ ul.alert-dropdown {
 #tbbutton:hover{
   background-color: #899199;
 }
-.label-success{
+.suc{
   font-size: 15px;
   float: center;
 }
-.label-danger{
+.dan{
   font-size: 15px;
   float: center;
-}.label-warning{
+}.war{
   font-size: 15px;
   float: center;
 }
@@ -283,4 +284,19 @@ ul.alert-dropdown {
 }
 #submit:hover{
   background-color: #56C176;
+}
+#login{
+  visibility: hidden;
+  overflow: hidden;
+  height: 0px;
+  width: 0px;
+}
+.ticketSection{
+  color : #545454 !important;
+}
+.row h1{
+  font-size: 36px !important;
+}
+.row h4{
+  font-size: 25px !important;
 }
